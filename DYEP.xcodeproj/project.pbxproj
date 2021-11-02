@@ -1,0 +1,525 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B0CBEF91D65632F0057CD5E /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B0CBEF81D65632F0057CD5E /* Video.swift */; };
+		3B54D7591D75F75A0016502E /* YouTubePlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAA27101D6CAD9300E7F147 /* YouTubePlayer.framework */; };
+		3B54D75A1D75F75A0016502E /* YouTubePlayer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAA27101D6CAD9300E7F147 /* YouTubePlayer.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3B9FDD361D5C4B8400807BB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD351D5C4B8400807BB7 /* AppDelegate.swift */; };
+		3B9FDD3B1D5C4B8400807BB7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FDD391D5C4B8400807BB7 /* Main.storyboard */; };
+		3B9FDD3D1D5C4B8400807BB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FDD3C1D5C4B8400807BB7 /* Assets.xcassets */; };
+		3B9FDD401D5C4B8400807BB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9FDD3E1D5C4B8400807BB7 /* LaunchScreen.storyboard */; };
+		3B9FDD561D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD4A1D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.m */; };
+		3B9FDD571D5C546300807BB7 /* ECSlidingAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD4C1D5C546300807BB7 /* ECSlidingAnimationController.m */; };
+		3B9FDD581D5C546300807BB7 /* ECSlidingInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD4F1D5C546300807BB7 /* ECSlidingInteractiveTransition.m */; };
+		3B9FDD591D5C546300807BB7 /* ECSlidingSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD511D5C546300807BB7 /* ECSlidingSegue.m */; };
+		3B9FDD5A1D5C546300807BB7 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD531D5C546300807BB7 /* ECSlidingViewController.m */; };
+		3B9FDD5B1D5C546300807BB7 /* UIViewController+ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD551D5C546300807BB7 /* UIViewController+ECSlidingViewController.m */; };
+		3B9FDD621D5C55BF00807BB7 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD611D5C55BF00807BB7 /* TimeViewController.swift */; };
+		3B9FDD661D5C55FA00807BB7 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD651D5C55FA00807BB7 /* MenuViewController.swift */; };
+		3B9FDD681D5C599400807BB7 /* SlidingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD671D5C599400807BB7 /* SlidingViewController.swift */; };
+		3B9FDD6C1D5C61AA00807BB7 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD6B1D5C61AA00807BB7 /* ContentViewController.swift */; };
+		3B9FDD6E1D5C6C4B00807BB7 /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD6D1D5C6C4B00807BB7 /* VideoViewController.swift */; };
+		3B9FDD721D5C82C600807BB7 /* SupportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD711D5C82C600807BB7 /* SupportViewController.swift */; };
+		3B9FDD741D5CD3D100807BB7 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD731D5CD3D100807BB7 /* HistoryViewController.swift */; };
+		3B9FDD761D5CE5DB00807BB7 /* YoutubeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B9FDD751D5CE5DB00807BB7 /* YoutubeViewController.swift */; };
+		3BC04F5D1D66FA0300F6504C /* historycell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC04F5C1D66FA0300F6504C /* historycell.swift */; };
+		CE8B08CB1D9DF48D00FB94FB /* total.wav in Resources */ = {isa = PBXBuildFile; fileRef = CE8B08CA1D9DF48D00FB94FB /* total.wav */; };
+		CEFA5E541D9D950A00CB23D3 /* beep-piano.aif in Resources */ = {isa = PBXBuildFile; fileRef = CEFA5E531D9D950A00CB23D3 /* beep-piano.aif */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3B54D75B1D75F75A0016502E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BAA27081D6CAD9300E7F147 /* YouTubePlayer.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 502AE85E1A475FD500306AD1;
+			remoteInfo = YouTubePlayer;
+		};
+		3BAA270F1D6CAD9300E7F147 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3BAA27081D6CAD9300E7F147 /* YouTubePlayer.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 502AE85F1A475FD500306AD1;
+			remoteInfo = YouTubePlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3B54D75D1D75F75A0016502E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3B54D75A1D75F75A0016502E /* YouTubePlayer.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3B0CBEF81D65632F0057CD5E /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		3B9FDD321D5C4B8400807BB7 /* DYEP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYEP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9FDD351D5C4B8400807BB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3B9FDD3A1D5C4B8400807BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3B9FDD3C1D5C4B8400807BB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3B9FDD3F1D5C4B8400807BB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3B9FDD411D5C4B8400807BB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B9FDD491D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECPercentDrivenInteractiveTransition.h; sourceTree = "<group>"; };
+		3B9FDD4A1D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECPercentDrivenInteractiveTransition.m; sourceTree = "<group>"; };
+		3B9FDD4B1D5C546300807BB7 /* ECSlidingAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingAnimationController.h; sourceTree = "<group>"; };
+		3B9FDD4C1D5C546300807BB7 /* ECSlidingAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingAnimationController.m; sourceTree = "<group>"; };
+		3B9FDD4D1D5C546300807BB7 /* ECSlidingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingConstants.h; sourceTree = "<group>"; };
+		3B9FDD4E1D5C546300807BB7 /* ECSlidingInteractiveTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingInteractiveTransition.h; sourceTree = "<group>"; };
+		3B9FDD4F1D5C546300807BB7 /* ECSlidingInteractiveTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingInteractiveTransition.m; sourceTree = "<group>"; };
+		3B9FDD501D5C546300807BB7 /* ECSlidingSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingSegue.h; sourceTree = "<group>"; };
+		3B9FDD511D5C546300807BB7 /* ECSlidingSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingSegue.m; sourceTree = "<group>"; };
+		3B9FDD521D5C546300807BB7 /* ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECSlidingViewController.h; sourceTree = "<group>"; };
+		3B9FDD531D5C546300807BB7 /* ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECSlidingViewController.m; sourceTree = "<group>"; };
+		3B9FDD541D5C546300807BB7 /* UIViewController+ECSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ECSlidingViewController.h"; sourceTree = "<group>"; };
+		3B9FDD551D5C546300807BB7 /* UIViewController+ECSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ECSlidingViewController.m"; sourceTree = "<group>"; };
+		3B9FDD5C1D5C549D00807BB7 /* Do-You-Even-Plank-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Do-You-Even-Plank-Bridging-Header.h"; sourceTree = "<group>"; };
+		3B9FDD611D5C55BF00807BB7 /* TimeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
+		3B9FDD651D5C55FA00807BB7 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		3B9FDD671D5C599400807BB7 /* SlidingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlidingViewController.swift; sourceTree = "<group>"; };
+		3B9FDD6B1D5C61AA00807BB7 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		3B9FDD6D1D5C6C4B00807BB7 /* VideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		3B9FDD711D5C82C600807BB7 /* SupportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SupportViewController.swift; sourceTree = "<group>"; };
+		3B9FDD731D5CD3D100807BB7 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		3B9FDD751D5CE5DB00807BB7 /* YoutubeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoutubeViewController.swift; sourceTree = "<group>"; };
+		3BAA27081D6CAD9300E7F147 /* YouTubePlayer.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = YouTubePlayer.xcodeproj; sourceTree = "<group>"; };
+		3BC04F5C1D66FA0300F6504C /* historycell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = historycell.swift; sourceTree = "<group>"; };
+		CE8B08CA1D9DF48D00FB94FB /* total.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = total.wav; sourceTree = "<group>"; };
+		CEFA5E531D9D950A00CB23D3 /* beep-piano.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = "beep-piano.aif"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B9FDD2F1D5C4B8400807BB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B54D7591D75F75A0016502E /* YouTubePlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9FDD291D5C4B8400807BB7 = {
+			isa = PBXGroup;
+			children = (
+				3B9FDD341D5C4B8400807BB7 /* Do You Even Plank */,
+				3B9FDD471D5C546300807BB7 /* Libraries */,
+				3B9FDD331D5C4B8400807BB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B9FDD331D5C4B8400807BB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B9FDD321D5C4B8400807BB7 /* DYEP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B9FDD341D5C4B8400807BB7 /* Do You Even Plank */ = {
+			isa = PBXGroup;
+			children = (
+				CEFA5E581D9D962800CB23D3 /* Header */,
+				CEFA5E571D9D95DA00CB23D3 /* ViewControllers */,
+				3B9FDD391D5C4B8400807BB7 /* Main.storyboard */,
+				3B9FDD3C1D5C4B8400807BB7 /* Assets.xcassets */,
+				3B9FDD3E1D5C4B8400807BB7 /* LaunchScreen.storyboard */,
+				CEFA5E591D9D965100CB23D3 /* Supporting Files */,
+			);
+			path = "Do You Even Plank";
+			sourceTree = "<group>";
+		};
+		3B9FDD471D5C546300807BB7 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				3BAA27031D6CAD9300E7F147 /* YouTubePlayer */,
+				3B9FDD481D5C546300807BB7 /* ECSlidingViewController */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		3B9FDD481D5C546300807BB7 /* ECSlidingViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3B9FDD491D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.h */,
+				3B9FDD4A1D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.m */,
+				3B9FDD4B1D5C546300807BB7 /* ECSlidingAnimationController.h */,
+				3B9FDD4C1D5C546300807BB7 /* ECSlidingAnimationController.m */,
+				3B9FDD4D1D5C546300807BB7 /* ECSlidingConstants.h */,
+				3B9FDD4E1D5C546300807BB7 /* ECSlidingInteractiveTransition.h */,
+				3B9FDD4F1D5C546300807BB7 /* ECSlidingInteractiveTransition.m */,
+				3B9FDD501D5C546300807BB7 /* ECSlidingSegue.h */,
+				3B9FDD511D5C546300807BB7 /* ECSlidingSegue.m */,
+				3B9FDD521D5C546300807BB7 /* ECSlidingViewController.h */,
+				3B9FDD531D5C546300807BB7 /* ECSlidingViewController.m */,
+				3B9FDD541D5C546300807BB7 /* UIViewController+ECSlidingViewController.h */,
+				3B9FDD551D5C546300807BB7 /* UIViewController+ECSlidingViewController.m */,
+			);
+			path = ECSlidingViewController;
+			sourceTree = "<group>";
+		};
+		3BAA27031D6CAD9300E7F147 /* YouTubePlayer */ = {
+			isa = PBXGroup;
+			children = (
+				3BAA27081D6CAD9300E7F147 /* YouTubePlayer.xcodeproj */,
+			);
+			path = YouTubePlayer;
+			sourceTree = "<group>";
+		};
+		3BAA27091D6CAD9300E7F147 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3BAA27101D6CAD9300E7F147 /* YouTubePlayer.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEFA5E571D9D95DA00CB23D3 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3B9FDD671D5C599400807BB7 /* SlidingViewController.swift */,
+				3B9FDD651D5C55FA00807BB7 /* MenuViewController.swift */,
+				3B9FDD611D5C55BF00807BB7 /* TimeViewController.swift */,
+				3B9FDD6B1D5C61AA00807BB7 /* ContentViewController.swift */,
+				3B9FDD6D1D5C6C4B00807BB7 /* VideoViewController.swift */,
+				3B9FDD751D5CE5DB00807BB7 /* YoutubeViewController.swift */,
+				3B9FDD731D5CD3D100807BB7 /* HistoryViewController.swift */,
+				3B9FDD711D5C82C600807BB7 /* SupportViewController.swift */,
+				3B0CBEF81D65632F0057CD5E /* Video.swift */,
+				3BC04F5C1D66FA0300F6504C /* historycell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CEFA5E581D9D962800CB23D3 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				3B9FDD351D5C4B8400807BB7 /* AppDelegate.swift */,
+				3B9FDD5C1D5C549D00807BB7 /* Do-You-Even-Plank-Bridging-Header.h */,
+			);
+			name = Header;
+			sourceTree = "<group>";
+		};
+		CEFA5E591D9D965100CB23D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B9FDD411D5C4B8400807BB7 /* Info.plist */,
+				CEFA5E531D9D950A00CB23D3 /* beep-piano.aif */,
+				CE8B08CA1D9DF48D00FB94FB /* total.wav */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B9FDD311D5C4B8400807BB7 /* DYEP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9FDD441D5C4B8400807BB7 /* Build configuration list for PBXNativeTarget "DYEP" */;
+			buildPhases = (
+				3B9FDD2E1D5C4B8400807BB7 /* Sources */,
+				3B9FDD2F1D5C4B8400807BB7 /* Frameworks */,
+				3B9FDD301D5C4B8400807BB7 /* Resources */,
+				3B54D75D1D75F75A0016502E /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B54D75C1D75F75A0016502E /* PBXTargetDependency */,
+			);
+			name = DYEP;
+			productName = "Do You Even Plank";
+			productReference = 3B9FDD321D5C4B8400807BB7 /* DYEP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B9FDD2A1D5C4B8400807BB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Simon Ko";
+				TargetAttributes = {
+					3B9FDD311D5C4B8400807BB7 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = SDV42GYTNY;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3B9FDD2D1D5C4B8400807BB7 /* Build configuration list for PBXProject "DYEP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				English,
+			);
+			mainGroup = 3B9FDD291D5C4B8400807BB7;
+			productRefGroup = 3B9FDD331D5C4B8400807BB7 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3BAA27091D6CAD9300E7F147 /* Products */;
+					ProjectRef = 3BAA27081D6CAD9300E7F147 /* YouTubePlayer.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3B9FDD311D5C4B8400807BB7 /* DYEP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3BAA27101D6CAD9300E7F147 /* YouTubePlayer.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YouTubePlayer.framework;
+			remoteRef = 3BAA270F1D6CAD9300E7F147 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B9FDD301D5C4B8400807BB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEFA5E541D9D950A00CB23D3 /* beep-piano.aif in Resources */,
+				CE8B08CB1D9DF48D00FB94FB /* total.wav in Resources */,
+				3B9FDD401D5C4B8400807BB7 /* LaunchScreen.storyboard in Resources */,
+				3B9FDD3D1D5C4B8400807BB7 /* Assets.xcassets in Resources */,
+				3B9FDD3B1D5C4B8400807BB7 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B9FDD2E1D5C4B8400807BB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9FDD581D5C546300807BB7 /* ECSlidingInteractiveTransition.m in Sources */,
+				3B9FDD621D5C55BF00807BB7 /* TimeViewController.swift in Sources */,
+				3B9FDD761D5CE5DB00807BB7 /* YoutubeViewController.swift in Sources */,
+				3B9FDD721D5C82C600807BB7 /* SupportViewController.swift in Sources */,
+				3B9FDD6E1D5C6C4B00807BB7 /* VideoViewController.swift in Sources */,
+				3BC04F5D1D66FA0300F6504C /* historycell.swift in Sources */,
+				3B9FDD5A1D5C546300807BB7 /* ECSlidingViewController.m in Sources */,
+				3B9FDD741D5CD3D100807BB7 /* HistoryViewController.swift in Sources */,
+				3B9FDD591D5C546300807BB7 /* ECSlidingSegue.m in Sources */,
+				3B9FDD661D5C55FA00807BB7 /* MenuViewController.swift in Sources */,
+				3B9FDD361D5C4B8400807BB7 /* AppDelegate.swift in Sources */,
+				3B9FDD561D5C546300807BB7 /* ECPercentDrivenInteractiveTransition.m in Sources */,
+				3B9FDD681D5C599400807BB7 /* SlidingViewController.swift in Sources */,
+				3B9FDD6C1D5C61AA00807BB7 /* ContentViewController.swift in Sources */,
+				3B0CBEF91D65632F0057CD5E /* Video.swift in Sources */,
+				3B9FDD5B1D5C546300807BB7 /* UIViewController+ECSlidingViewController.m in Sources */,
+				3B9FDD571D5C546300807BB7 /* ECSlidingAnimationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B54D75C1D75F75A0016502E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouTubePlayer;
+			targetProxy = 3B54D75B1D75F75A0016502E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3B9FDD391D5C4B8400807BB7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9FDD3A1D5C4B8400807BB7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3B9FDD3E1D5C4B8400807BB7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9FDD3F1D5C4B8400807BB7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B9FDD421D5C4B8400807BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Taylor Smears (SDV42GYTNY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Taylor Smears (SDV42GYTNY)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "8a59aa6a-9d81-4c83-92c8-5e73deb44a2e";
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3B9FDD431D5C4B8400807BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Taylor Smears (SDV42GYTNY)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Taylor Smears (SDV42GYTNY)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "8a59aa6a-9d81-4c83-92c8-5e73deb44a2e";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B9FDD451D5C4B8400807BB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taylor Smears (QKMWJCLWE9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taylor Smears (QKMWJCLWE9)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Do You Even Plank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DGTLR_BUILT_AS_FRAMEWORK=1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosapp.dyep;
+				PRODUCT_NAME = DYEP;
+				PROVISIONING_PROFILE = "a364b552-f3e9-4013-a329-987cb331177c";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Do You Even Plank/Do-You-Even-Plank-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		3B9FDD461D5C4B8400807BB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Taylor Smears (QKMWJCLWE9)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Taylor Smears (QKMWJCLWE9)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "Do You Even Plank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-DGTLR_BUILT_AS_FRAMEWORK=1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.iosapp.dyep;
+				PRODUCT_NAME = DYEP;
+				PROVISIONING_PROFILE = "a364b552-f3e9-4013-a329-987cb331177c";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/Do You Even Plank/Do-You-Even-Plank-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B9FDD2D1D5C4B8400807BB7 /* Build configuration list for PBXProject "DYEP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9FDD421D5C4B8400807BB7 /* Debug */,
+				3B9FDD431D5C4B8400807BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9FDD441D5C4B8400807BB7 /* Build configuration list for PBXNativeTarget "DYEP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9FDD451D5C4B8400807BB7 /* Debug */,
+				3B9FDD461D5C4B8400807BB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B9FDD2A1D5C4B8400807BB7 /* Project object */;
+}
